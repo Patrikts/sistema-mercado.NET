@@ -21,20 +21,13 @@ namespace SistemaMercado
         {
 
         }
-<<<<<<< Updated upstream
-=======
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void label1_Click_1(object sender, EventArgs e)
         {
 
         }
@@ -44,7 +37,12 @@ namespace SistemaMercado
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
@@ -53,6 +51,5 @@ namespace SistemaMercado
         {
             this.Close();
         }
->>>>>>> Stashed changes
     }
 }
