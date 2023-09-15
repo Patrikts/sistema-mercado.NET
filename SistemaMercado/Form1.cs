@@ -17,20 +17,10 @@ namespace SistemaMercado
             InitializeComponent();
         }
 
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
         private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CadProduto CadastrarProduto = new CadProduto();
             CadastrarProduto.Show();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void alteraçãoExclusãoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -44,7 +34,7 @@ namespace SistemaMercado
             Application.Exit();
         }
 
-        private void caixaToolStripMenuItem_Click_1(object sender, EventArgs e)
+        private void caixaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Caixa FormCaixa = new Caixa();
             FormCaixa.Show();
