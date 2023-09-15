@@ -201,6 +201,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "CadProduto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CadProduto";
             this.Load += new System.EventHandler(this.CadProduto_Load);
             this.menuStrip1.ResumeLayout(false);
