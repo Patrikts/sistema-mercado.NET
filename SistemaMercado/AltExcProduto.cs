@@ -16,5 +16,33 @@ namespace SistemaMercado
         {
             InitializeComponent();
         }
+<<<<<<< Updated upstream
+=======
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AltExcProduto_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void voltarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+>>>>>>> Stashed changes
     }
 }
