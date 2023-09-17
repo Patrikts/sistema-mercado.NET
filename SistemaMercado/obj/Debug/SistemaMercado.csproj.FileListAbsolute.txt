@@ -11,3 +11,16 @@ E:\projetos\SistemaMercado\sistema-mercado-C-\SistemaMercado\bin\Debug\SistemaMe
 E:\projetos\SistemaMercado\sistema-mercado-C-\SistemaMercado\bin\Debug\SistemaMercado.pdb
 E:\projetos\SistemaMercado\sistema-mercado-C-\SistemaMercado\obj\Debug\SistemaMercado.exe
 E:\projetos\SistemaMercado\sistema-mercado-C-\SistemaMercado\obj\Debug\SistemaMercado.pdb
+E:\projetos\sistema-mercado.NET-main\SistemaMercado\bin\Debug\SistemaMercado.exe.config
+E:\projetos\sistema-mercado.NET-main\SistemaMercado\bin\Debug\SistemaMercado.exe
+E:\projetos\sistema-mercado.NET-main\SistemaMercado\bin\Debug\SistemaMercado.pdb
+E:\projetos\sistema-mercado.NET-main\SistemaMercado\obj\Debug\SistemaMercado.csproj.AssemblyReference.cache
+E:\projetos\sistema-mercado.NET-main\SistemaMercado\obj\Debug\SistemaMercado.AltExcProduto.resources
+E:\projetos\sistema-mercado.NET-main\SistemaMercado\obj\Debug\SistemaMercado.CadProduto.resources
+E:\projetos\sistema-mercado.NET-main\SistemaMercado\obj\Debug\SistemaMercado.Caixa.resources
+E:\projetos\sistema-mercado.NET-main\SistemaMercado\obj\Debug\SistemaMercado.Form1.resources
+E:\projetos\sistema-mercado.NET-main\SistemaMercado\obj\Debug\SistemaMercado.Properties.Resources.resources
+E:\projetos\sistema-mercado.NET-main\SistemaMercado\obj\Debug\SistemaMercado.csproj.GenerateResource.cache
+E:\projetos\sistema-mercado.NET-main\SistemaMercado\obj\Debug\SistemaMercado.csproj.CoreCompileInputs.cache
+E:\projetos\sistema-mercado.NET-main\SistemaMercado\obj\Debug\SistemaMercado.exe
+E:\projetos\sistema-mercado.NET-main\SistemaMercado\obj\Debug\SistemaMercado.pdb

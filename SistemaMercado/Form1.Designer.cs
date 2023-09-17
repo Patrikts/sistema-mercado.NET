@@ -62,14 +62,14 @@
             // cadastrarToolStripMenuItem
             // 
             this.cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
-            this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.cadastrarToolStripMenuItem.Text = "Cadastrar";
             this.cadastrarToolStripMenuItem.Click += new System.EventHandler(this.cadastrarToolStripMenuItem_Click);
             // 
             // alteraçãoExclusãoToolStripMenuItem
             // 
             this.alteraçãoExclusãoToolStripMenuItem.Name = "alteraçãoExclusãoToolStripMenuItem";
-            this.alteraçãoExclusãoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.alteraçãoExclusãoToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.alteraçãoExclusãoToolStripMenuItem.Text = "Alteração/Exclusão";
             this.alteraçãoExclusãoToolStripMenuItem.Click += new System.EventHandler(this.alteraçãoExclusãoToolStripMenuItem_Click);
             // 
@@ -108,6 +108,7 @@
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
