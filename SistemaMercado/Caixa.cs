@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,6 +17,22 @@ namespace SistemaMercado
         {
             InitializeComponent();
         }
+
+        #region variaveis
+        public string strcon = "Data Source=DESKTOP-D3EIMK3;Initial Catalog=Trabalho;Integrated Security=True";
+        public SqlConnection SqlCon;
+        float TotalVenda = 0;
+        int i;
+        #endregion
+
+        #region método fechar, sair, limpar, datagrid e gerarcodigo
+
+        private void NomearDatagrid()
+        {
+
+        }
+
+        #endregion
 
         private void Caixa_Load(object sender, EventArgs e)
         {

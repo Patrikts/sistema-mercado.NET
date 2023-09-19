@@ -19,6 +19,8 @@ namespace SistemaMercado
             InitializeComponent();
         }
 
+        string imagem;
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -36,6 +38,50 @@ namespace SistemaMercado
 
         private void button4_Click(object sender, EventArgs e)
         {
+            string strsql = "Delete from produtos where idprod=@idprod";
+
+            sqlcon = new SqlConnection(strCon);
+
+            SqlCommand cmdprod = new SqlCommand(strsql, sqlcon);
+
+            cmdprod.Parameters.Add("@idprod", SqlDbType.Int).Value = int.Parse(textBox5.Text);
+
+            if (MessageBox.Show("Deseja realmente excluir?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.No)
+            {
+
+            }
+
+            else
+            {
+                try
+                {
+                    sqlcon.Open();
+                    cmdprod.ExecuteNonQuery();
+                    MessageBox.Show("Dados Excluidos");
+                    Limpar();
+
+                }catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    sqlcon.Close();
+                }
+                
+            }
+
+        }
+
+        private void Limpar()
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
+            textBox5.Text = "";
+            textBox5.Focus();
+            pictureBox1.Image = null;
 
         }
 
@@ -50,11 +96,13 @@ namespace SistemaMercado
 
         private void button3_Click(object sender, EventArgs e)
         {
-            string strsql = "select * from produtos where idprod=@id";
+            string strsql = "select * from produtos where idprod=@idprod";
 
             sqlcon = new SqlConnection(strCon);
 
             SqlCommand cmdprod = new SqlCommand(strsql, sqlcon);
+
+            cmdprod.Parameters.Add("@idprod", SqlDbType.Int).Value = int.Parse(textBox5.Text);
 
             try
             {
@@ -97,6 +145,67 @@ namespace SistemaMercado
             {
                 sqlcon.Close();
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string strsql = "Update produtos set nome=@nome,preco=@preco,quant=@quantidade,fotos=@fotos where idprod=@idprod";
+
+            sqlcon = new SqlConnection(strCon);
+
+            SqlCommand cmdprod = new SqlCommand(strsql, sqlcon);
+
+            cmdprod.Parameters.Add("@idprod", SqlDbType.Int).Value = int.Parse(textBox5.Text);
+
+            cmdprod.Parameters.Add("@nome", SqlDbType.VarChar).Value = textBox2.Text;
+
+            cmdprod.Parameters.Add("@preco", SqlDbType.VarChar).Value = textBox4.Text;
+
+            cmdprod.Parameters.Add("@quantidade", SqlDbType.VarChar).Value = textBox3.Text;
+
+            byte[] imagem_byte = null;
+            FileStream fs = new FileStream(imagem, FileMode.Open, FileAccess.Read);
+
+            BinaryReader br = new BinaryReader(fs);
+
+            imagem_byte = br.ReadBytes((int)fs.Length);
+
+            cmdprod.Parameters.Add(new SqlParameter("@fotos", imagem_byte));
+
+            if (MessageBox.Show("Deseja realmente alterar?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)==DialogResult.No)
+            {
+
+            }
+
+            else
+            {
+                try
+                {
+                    sqlcon.Open();
+                    cmdprod.ExecuteNonQuery();
+                    MessageBox.Show("Dados Alterados");
+                    Limpar();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    sqlcon.Close();
+                }
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                imagem = dialog.FileName.ToString();
+                pictureBox1.ImageLocation = imagem;
+            }
+
         }
     }
 }
