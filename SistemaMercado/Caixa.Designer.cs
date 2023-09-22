@@ -92,7 +92,8 @@
             this.textBox1.Location = new System.Drawing.Point(215, 108);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(123, 20);
-            this.textBox1.TabIndex = 14;
+            this.textBox1.TabIndex = 1;
+            this.textBox1.Validating += new System.ComponentModel.CancelEventHandler(this.textBox1_Validating);
             // 
             // label3
             // 
@@ -121,7 +122,7 @@
             this.textBox2.Location = new System.Drawing.Point(344, 108);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(163, 20);
-            this.textBox2.TabIndex = 16;
+            this.textBox2.TabIndex = 2;
             // 
             // label5
             // 
@@ -139,7 +140,7 @@
             this.textBox3.Location = new System.Drawing.Point(513, 108);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(163, 20);
-            this.textBox3.TabIndex = 18;
+            this.textBox3.TabIndex = 3;
             // 
             // label6
             // 
@@ -157,7 +158,8 @@
             this.textBox4.Location = new System.Drawing.Point(215, 159);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(123, 20);
-            this.textBox4.TabIndex = 21;
+            this.textBox4.TabIndex = 4;
+            this.textBox4.Validating += new System.ComponentModel.CancelEventHandler(this.textBox4_Validating);
             // 
             // label7
             // 
@@ -175,7 +177,7 @@
             this.textBox5.Location = new System.Drawing.Point(344, 159);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(163, 20);
-            this.textBox5.TabIndex = 23;
+            this.textBox5.TabIndex = 5;
             // 
             // button1
             // 
@@ -183,16 +185,18 @@
             this.button1.Location = new System.Drawing.Point(513, 149);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(163, 30);
-            this.button1.TabIndex = 24;
+            this.button1.TabIndex = 6;
             this.button1.Text = "Adicionar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 196);
+            this.dataGridView1.Location = new System.Drawing.Point(40, 204);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(689, 128);
+            this.dataGridView1.Size = new System.Drawing.Size(636, 128);
             this.dataGridView1.TabIndex = 25;
             // 
             // menuStrip1
